@@ -33,6 +33,7 @@ pip install wheel==0.38.4
 pip install -r requirement.txt
 ```
 
+Download the data from [ODRL](https://github.com/OffDynamicsRL/off-dynamics-rl) and put it in dataset/ folder. 
 Run Experiments
 ```bash
 CUDA_VISIBLE_DEVICES=1 python -u train_mobody.py --policy MOBODY --env walker2d-friction --shift_level 2.0 --seed 1 --dir runs --train_dynamics 1 --penalty_type dara --env_penalty_coef 5 --src_rollout_length 1 --trg_rollout_length 1 --bc_coef 1 --wandb 0  &
@@ -41,3 +42,5 @@ Baselines
 ```bash
 CUDA_VISIBLE_DEVICES=1 python -u train_mobody.py --policy DARA --env walker2d-friction --shift_level 2.0 --seed 1 --dir runs --train_dynamics 0 --penalty_type dara --wandb 0  &
 ```
+## Acknowledgments  
+This repo benefits from [ODRL](https://github.com/OffDynamicsRL/off-dynamics-rl) Thanks for their wonderful works!
