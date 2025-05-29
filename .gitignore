@@ -1,0 +1,134 @@
+runs/*
+slurm*
+*.pyc
+__pycache__/
+**/__pycache__/
+*.png
+Update_draft.md
+**/.ipynb_checkpoints/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually contains build artifacts for executables
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# VSCode settings
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+__MACOSX/
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# Jupyter Notebook autosave
+*.autosave.ipynb
+
+# Docker
+*.pid
+*.bak
+
+# My additions
+*.swp
+*.swo
+*.~  # Backup files
+
+# Ignore datasets or model checkpoints
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.npz
+*.npy
+
+# Ignore large local results
+logs/
+results/
+checkpoints/
+runs/
+
+# Ignore specific tools
+.mypy_cache/
+.pyre/
+.pytype/
+
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+._*
+
+.Spotlight-V100
+.Trashes
+
+Icon?
+
+.DFStore
+.DFCMetaData
