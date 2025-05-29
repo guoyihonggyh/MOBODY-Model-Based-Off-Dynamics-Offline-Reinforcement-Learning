@@ -25,6 +25,7 @@ evaluate MOBODY on standard MuJoCo benchmarks and show that it significantly out
 state-of-the-art baselines, with especially pronounced improvements in challenging scenarios
 where existing methods struggle.
 
+## Quick Start
 Install Package
 ```bash
 conda create -n offdynamics python=3.8.13 && conda activate offdynamics
@@ -43,4 +44,4 @@ Baselines
 CUDA_VISIBLE_DEVICES=1 python -u train_mobody.py --policy DARA --env walker2d-friction --shift_level 2.0 --seed 1 --dir runs --train_dynamics 0 --penalty_type dara --wandb 0  &
 ```
 ## Acknowledgments  
-This repo benefits from [ODRL](https://github.com/OffDynamicsRL/off-dynamics-rl) Thanks for their wonderful works!
+This repo benefits from [ODRL](https://github.com/OffDynamicsRL/off-dynamics-rl). Thanks for their wonderful works!
