@@ -323,8 +323,8 @@ class MOBODYEnsembleDynamics(BaseDynamics):
             latent_next_state, _, _  = self.model.encode_state(nextstate_batch)
 
         loss += ((latent_state - latent_next_state) ** 2).mean(dim=(1, 2)).sum()
-
-        loss = 0.01 * self.model.get_decay_loss()
+        # test encoder loss
+        # loss = 0.01 * self.model.get_decay_loss()
         return loss, recon_loss, kl_loss
     
     def get_kl_loss( self, mu, logvar):
